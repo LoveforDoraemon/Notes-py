@@ -42,6 +42,12 @@ b = [5,2,0]
 # a is a pointer pointed to a string object
 # b is a pointer pointed to a list object
 ```
+## fundamental
+
+### __name__
+* `__name__` is a built-in variable: value = "__main__"(when executed)/module name(when imported)
+
+
 
 
 
@@ -98,17 +104,40 @@ class Student:
     name = ""
     grade = ""
     major = ""
-    ID = 0
+    id = 0
     
-    def __init__(self,name,grade,major,ID):
+    def __init__(self,name,grade,major,id):
         """initialize fundamental attribution"""
         self.name = name
         self.garde = grade
         self.major = major
-        self.ID = ID
+        self.id = id
         
     def selfintro(self):
         """A self-introduction"""
-        print("I'm",self.name,"in grade",self.grade)
+        print("I'm",self.name,"in grade",)
 ```
 
+### inheritance
+
+```python
+# definition of DerivedClass
+class DerivedClassName(BaseClassName1):
+    # new properties
+    xxx = xxx
+    # new method
+    def methodname(self,arg):
+		xxx
+  		xxx
+    # 
+```
+* in multiple inheritance, By default, the method of the parent class with the first parameter position in parentheses is called by default.
+
+### super(cls,inst)
+* used to call parent class
+* it can get MRO and return the next clss in the list(uses object form subclass to create a parent-class)
+* MRO:Method Resolution Order a list of parent-class
+* used to keep the method of parent-class
+
+### private properties/method
+* properties/method begins with "__" can only be accessed in class but can't be accessed by instance
