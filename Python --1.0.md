@@ -4,7 +4,7 @@
 
 ### identifier
 
-* the fist character must be a letter/'_'
+* the fist character must be a letter or '_'
 * the others can be letter/num/'_'
 * identifier is case sensitive
 * Python3 can even use Chinese char
@@ -35,6 +35,7 @@ Python uses indent to splite code block
 
 * In python, a variable has no type (while object has).
 * A variable is only a pointer pointing to an object
+* while object has a type
 
 ```python
 a = "Hello,world!"
@@ -141,3 +142,6 @@ class DerivedClassName(BaseClassName1):
 
 ### private properties/method
 * properties/method begins with "__" can only be accessed in class but can't be accessed by instance
+
+### reference
+1. https://www.runoob.com/python3/python3-tutorial.html
